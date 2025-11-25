@@ -29,12 +29,11 @@ function playGame() {
     let playerScore = 0;
     let computerScore = 0;
 
-    for (let i = 1; i <= 5; i++) {
-        const playerSelection = getPlayerChoice();
-        const computerSelection = getComputerChoice();
+    
+    const playerSelection = getPlayerChoice();
+    const computerSelection = getComputerChoice();
 
-        playRound(playerSelection, computerSelection);
-    };
+    playRound(playerSelection, computerSelection);
 
     function declareScore() {
         if (playerScore > computerScore) {
